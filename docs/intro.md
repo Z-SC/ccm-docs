@@ -3,7 +3,7 @@
 ## What is a cluster?
 
 Cluster is a collection of (usually Linux) computers connected by a high-speed private network. 
-Only a designated computer, the **head node**, is accessible from the outside. 
+Only one designated computer, the **head node**, is accessible from the outside. 
 Other nodes, called **compute nodes** are connected to
 the outside through the head node. You do not work on the compute nodes directly, but submit your work through a **batch scheduler**,
 which is a program that distributes the work between the compute nodes. 
@@ -18,8 +18,8 @@ contains the commands you want to execute and special comments,
 where you tell the scheduler what kind of resources the job needs - the number of nodes and cores to use,
 the queue you want to use, the maximum time the job is allowed to take, and more. 
 
-Then you submit your batch script to the scheduler, which will try to find nodes with available resources you
-asked for, and, when successful, starts executing the batch script there. If the resources are not available
+Then you submit your batch script to the scheduler, which will find nodes with the available resources you
+specified, and executing the batch script there. the resources are not available
 at the moment, your job will wait in a queue. Your job will run in the directory where it was submitted,
 which is also the default location for any files the job may create. After the job ends, 
 the scheduler will deposit the output from the batch script in the directory also.

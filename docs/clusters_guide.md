@@ -6,20 +6,13 @@
 
 The system uses CentOS 7 and 8 operating system. There are two head nodes (entry points) to the system, `math-alderaan.ucdenver.pvt` and `clas-compute.ucdenver.pvt`. You can use either. Alderann cluster runs Centos 8 while the other clusters and `clas-compute` run Centos 7.
 
-At this time, the main way of using the system is to use an SSH client to login to a terminal session on clas-compute or math-alderaan. You will need to be on the CU Denver network (wired or CU Denver wireless, not CU Denver Guest), or using the university's VPN.
+At this time, the best way of using the system is to use an SSH client to login to a terminal session on clas-compute or math-alderaan. You will need to be on the CU Denver network (wired or CU Denver wireless, not CU Denver Guest), or using the university's VPN.
 
 This system uses your normal portal/email username and password, but user account must be set up before using the system. Please go to [accounts](../accounts/) to request an account.
 
 On Linux or a Mac, you can use simply the Terminal app, which is built into the operating system. It is hidden away in Applications -> Utilities folder on a Mac and in similar places on various Linux desktops. You may want to drag it to your dock (on a Mac) or the desktop (on Linux) so that it is available more conveniently next time.
 
-On Windows, you will need an SSH client.  Recent builds of Windows 10 and 11 have a [native ssh client](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh) - just type `ssh` in a terminal window (also called powershell window or command window). The ssh client also has `scp` and `sftp` for file transfer. 
-
-Otherwise you can use PuTTY which is available for download [here](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can use either 32 or 64 bit versions - computers that require the 32 bit version are rather rare (early Windows 7/Vista/XP).
-
-![Putty Windows](img/Puttywindows.png)
-
-
-You can also use the [Windows 10 subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), where you install a Linux distribution as an app and can use it to ssh out like from a terminal window on any Linux machine. This is often more stable than Putty, which tends to get stuck on some computers.
+On Windows, you will need an SSH client.  Recent builds of Windows 10 and 11 have a [native ssh client](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh) - called Terminal. just type `ssh` in a terminal window The ssh client also has `scp` and `sftp` for file transfer. 
 
 Either way, from a terminal window, at the command line prompt type in:
 
@@ -29,7 +22,6 @@ or
 
     ssh username@math-alderaan.ucdenver.pvt
 
-The username is your account name, a single short word which you can use to log into the university portal instead of email address, not the firstname.lastname in your university email. Contact us or OIT helpdesk at [ucd-oit-helpdesk@cuanschutz.edu](mailto:ucd-oit-helpdesk@cuanschutz.edu) if you do not know what your account name is.
 
 After connecting, ssh should ask for your CU Denver password and you enter it at this point. You should be then at the `math-alderaan` or `clas-compute` prompt and in your home directory, which is `/home/username`. 
 

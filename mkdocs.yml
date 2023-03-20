@@ -17,21 +17,18 @@ plugins:
         python:
           options:
             docstring_style: sphinx
-  markdown_extensions:
-    - markdown_include.include:
+markdown_extensions:
+  - markdown_include.include:
       base_path: .
   - admonition
 nav:
     - Welcome: index.md
     - Workshop: workshop.md
     - Training: training.md
-<<<<<<< HEAD
     - News and system status:  updates.md
     - Registration and Login: Registration_and_Login.md
-=======
     - News and Status Updates:  updates.md
     - Overview: overview.md
->>>>>>> upstream/main
     - Clusters Guide: clusters_guide.md
     - Examples: examples.md
     - Accounts and Allocations: accounts.md
